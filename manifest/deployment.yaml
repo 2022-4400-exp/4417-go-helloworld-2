@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-        labels:
-                app: go-helloworld-2
-        name: go-helloworld-2
+  labels:
+    app: go-helloworld-2
+  name: go-helloworld-2
 spec:
-        replicas: 1
-        selector:
-                matchLabels:
-                        app: go-helloworld-2
-        template:
-                metadata:
-                        labels:
-                                app: go-helloworld-2
-                spec:
-                        containers:
-                                - image: ghcr.io/2022-4400-exp/4417-go-helloworld-2:dea6129ea665e20e9c159ee37e16de5912e64a9c
-                                  name: go-helloworld-2
+  replicas: 1
+  selector:
+    matchLabels:
+      app: go-helloworld-2
+  template:
+    metadata:
+      labels:
+        app: go-helloworld-2
+    spec:
+      containers:
+        - image: ghcr.io/2022-4400-exp/4417-go-helloworld-2:5cd423b92c9f987a1f259abbf6882270f0b3dcfd
+          name: go-helloworld-2
